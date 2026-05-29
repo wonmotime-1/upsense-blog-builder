@@ -99,7 +99,7 @@ function infographicPrompt({ keyword, points }) {
 function quoteCardPrompt({ quote, keyword }) {
   return [
     `Create a 1:1 square Korean quote card — clean editorial typography focus.`,
-    `Small label at top in warm-orange: "${keyword}"`,
+    `Small label at top in the brand accent color (${ACCENT}): "${keyword}"`,
     `Center the large Korean quote in bold sans-serif (not serif), perfectly legible: "${quote}"`,
     `Bottom-right signature: "— ${BRAND_NAME}"`,
     `Oversized decorative quotation marks as faint background element (very low opacity).`,
@@ -118,7 +118,7 @@ function processPrompt({ keyword, steps }) {
     `Top title in Korean: "${keyword} 진행 프로세스"`,
     `Render this as a horizontal row of numbered pill-shaped nodes connected by arrows, each node containing its Korean label clearly:`,
     numberedSteps,
-    `Each node: rounded rectangle with number badge + Korean label. Arrows between nodes in warm-orange.`,
+    `Each node: rounded rectangle with number badge + Korean label. Arrows between nodes in the brand accent color (${ACCENT}).`,
     `Bottom-right corner: "${BRAND_NAME}"`,
     BRAND_STYLE,
     `Pure schematic diagram, no background imagery, no people.`,
